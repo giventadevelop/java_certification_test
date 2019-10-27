@@ -7,9 +7,18 @@ public class OptionalMethods {
 	public static void main(String[] args) {
 		Optional<String> opt = Optional.of("Baeldung");
 	    //assertFalse(opt.get());
-		System.out.println(" Optional get" +opt.get() );
+		System.out.println(" Optional get " +opt.get() );
 	 
-	    opt = Optional.ofNullable(null);
+		String nullValue = null;
+	    
+	    nullValue = "hasValue";
+	    
+	    opt = Optional.ofNullable(nullValue);
+	    System.out.println(" Optional Value is  " +opt.orElse("noValue") );
+	    
+	    
+	    nullValue = null;
+	    opt = Optional.ofNullable(nullValue);
 	    System.out.println(" Optional ofNullable" +opt.get() );
 
 	}
