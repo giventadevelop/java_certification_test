@@ -40,6 +40,10 @@ static class  Sparrow extends Bird{
 		
 		//birds.add(new Sparrow());
 		
+		/*List<? extends Sparrow> sparrows=new ArrayList<Sparrow>();
+		
+		sparrows.add(new Bird());*/
+		
 		/*
 		 * The above gives compilation error since the birds
 		 * has become immutable and can only  used inside as
@@ -48,7 +52,7 @@ static class  Sparrow extends Bird{
 		
 	//	List<? super  IOException> exceptions=new ArrayList<Exception>();
 		List<? super  IOException> exceptions=new ArrayList<>();
-		//exceptions.add(new FileNotFoundException () ); 
+		exceptions.add(new FileNotFoundException () ); 
 		
 		exceptions.add(new IOException () );
 

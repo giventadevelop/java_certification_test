@@ -18,6 +18,7 @@ public class OptionalMethods {
 	    
 	    
 	    nullValue = null;
+	    opt = Optional.of(nullValue);
 	    opt = Optional.ofNullable(nullValue);
 	    System.out.println(" Optional ofNullable" +opt.get() );
 
