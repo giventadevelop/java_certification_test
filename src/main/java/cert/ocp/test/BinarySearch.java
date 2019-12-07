@@ -39,7 +39,17 @@ public class BinarySearch {
 		
 		System.out.println("list "+list);
 		
+		System.out.println("Prints -1 or undefined value if the list is reverse descending order or not sorted ");
+		//System.out.println("Prints -1 or undefined value if the list is reverse descending order sorted ");
 		System.out.println(Collections.binarySearch(list, 1));
+		
+		Collections.sort(list);
+		
+		System.out.println("list "+list);
+		System.out.println("Searching in  ascending order prints the right value ");
+		
+		System.out.println(Collections.binarySearch(list, 1));
+		
 
 
 	}
