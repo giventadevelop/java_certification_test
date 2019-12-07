@@ -24,9 +24,12 @@ public class LocaleProperties {
 	 */
 	public static void main(String[] args) {
 
-		 Locale fr = new Locale("fr");
+		/* Locale fr = new Locale("fr");
 		 Locale.setDefault(new Locale("en", "US"));
-		 ResourceBundle b = ResourceBundle.getBundle("Dolphins", fr);
+		 ResourceBundle b = ResourceBundle.getBundle("Dolphins", fr);*/
+		
+		// Locale.setDefault(new Locale("en", "US"));
+		 ResourceBundle b = ResourceBundle.getBundle("Dolphins");
 		System.out.println(b.getString("name") ); 
 		System.out.println( b.getString("age"));
 
