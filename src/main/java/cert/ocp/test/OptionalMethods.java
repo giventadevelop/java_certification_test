@@ -9,17 +9,17 @@ public class OptionalMethods {
 	    //assertFalse(opt.get());
 		System.out.println(" Optional get " +opt.get() );
 	 
+		// this will immediately throw java.lang.NullPointerException
 		String nullValue = null;
-		opt = Optional.of(nullValue);
+		//opt = Optional.of(nullValue);
 	    
 	    nullValue = "hasValue";
 	    
 	    opt = Optional.ofNullable(nullValue);
 	    System.out.println(" Optional Value is  " +opt.orElse("noValue") );
 	    
-	    
+	    // the below throw  java.util.NoSuchElementException: No value present
 	    nullValue = null;
-	    opt = Optional.of(nullValue);
 	    opt = Optional.ofNullable(nullValue);
 	    System.out.println(" Optional ofNullable" +opt.get() );
 

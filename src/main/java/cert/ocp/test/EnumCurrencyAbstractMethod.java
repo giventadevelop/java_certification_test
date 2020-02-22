@@ -28,8 +28,7 @@ public enum EnumCurrencyAbstractMethod {
 			 return "INDIA_AbstractMethod";
 		}
 		
-	};
-	
+	} ;
 	
 	public String getCurrency() {
 		// TODO Auto-generated method stub
@@ -61,8 +60,5 @@ public enum EnumCurrencyAbstractMethod {
         
         System.out.println(" usEnum.getEnumAbstractMethod() "+ usEnum.getEnumAbstractMethod());
         
-        
-        
     }
-
 }

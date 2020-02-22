@@ -10,9 +10,10 @@ public class StaticNestedClass{
 	   void msg(){System.out.println("PrivateStaticInner data is "+data);}  
 	  } 
   public static void main(String args[]){ 
-	  
-  StaticNestedClass.DefaultPackInner obj=new StaticNestedClass.DefaultPackInner();  
-  obj.msg(); 
+
+	  // A declaration like this below is causing compile error since the clss is default package
+  /*StaticNestedClass.DefaultPackInner obj=new StaticNestedClass.DefaultPackInner();  
+  obj.msg();*/ 
   
   // you can also invoke or instatiate this way below.
   DefaultPackInner nested = new DefaultPackInner();
