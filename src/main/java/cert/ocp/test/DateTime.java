@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalUnit;
 
@@ -46,6 +47,22 @@ public class DateTime {
 		Duration durationBetween = Duration.between(start, end);
 		
 		System.out.println("durationBetween   "+ durationBetween );
+		
+		Duration durationOfSeconds = Duration.ofSeconds(3600);
+		
+		System.out.println("durationOfSeconds   "+ durationOfSeconds );
+		
+        Duration durationOfMinutes = Duration.ofMinutes(90);
+		
+		System.out.println("durationOfMinutes   "+ durationOfMinutes );
+		
+        ZonedDateTime zonedDateTimeNow = ZonedDateTime.now();
+		
+		System.out.println("zonedDateTimeNow   "+ zonedDateTimeNow );
+		
+		Instant instantNow = Instant.now();
+		
+		System.out.println("instantNow   "+ instantNow );
 
 	}
 
