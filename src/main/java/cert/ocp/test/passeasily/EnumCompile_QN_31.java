@@ -18,14 +18,23 @@ public class EnumCompile_QN_31 {
 		DIME (10),
 		QUARTER(25);
 		private int value;
-		public USCurrency(int value) {
+		
+		/*both the below type constructors are permitted 
+		one with private and default for enums*/
+		
+		private USCurrency(int value) {
 		this.value = value;
 		}
+		
+		/*USCurrency(int value) {
+			this.value = value;
+			}
+		*/
 		public int getValue() {return value;}
 		}
 
 		public static void main (String[] args) {
-		USCurrency usCoin = new  USCurrency.DIME;
+		USCurrency usCoin =  USCurrency.DIME;
 		System.out.println (usCoin.getValue());
 		
 		}
