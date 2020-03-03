@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 /**
  * @author gain
@@ -19,6 +20,14 @@ public class PathFilesCopyQN_5 {
 	 */
 	public static void main(String[] args) {
 		
+		// QN 141
+		
+		System.out.println ("  QN 141" );
+		
+		Path pl = Paths.get("/Pics/MyPic.jpeg");
+		System.out.println (pl.getNameCount() +"3" + pl.getName(1) + "3" + pl.getFileName());
+		
+		System.out.println ("  QN 5" );
 		File sourceFile = new File( "C:\\code_backup\\java_ocp_test\\path_copy_dest\\path_copy_src\\path_copy_test_file.txt" );
 		Path sourcePath = sourceFile.toPath();
 
