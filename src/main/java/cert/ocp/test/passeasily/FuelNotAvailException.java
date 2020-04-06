@@ -6,7 +6,9 @@ public class FuelNotAvailException extends Exception { }
 	}
 	}
 	class SolarVehicle extends Vehicle2 {
-	void ride () throws FuelNotAvailException { //line n2
+	//Cannot reduce the visibility to private of the inherited method from Vehicle2
+		//private void ride () throws FuelNotAvailException { //line n2
+		void ride () throws FuelNotAvailException { //line n2
 	super.ride();
 	}
 	}

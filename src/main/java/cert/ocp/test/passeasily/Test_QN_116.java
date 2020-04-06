@@ -11,7 +11,10 @@ public class Test_QN_116 {
 			System.out.println("Java EE");
 		}
 		
+		//int [] array;
+		// The above gives -  he local variable array may not have been initialized
 		int [] array=new int[2];
+		
 		array[0]=10;
 
 		array[1] =20;
@@ -21,12 +24,12 @@ public class Test_QN_116 {
 		System.out.println("");
 		
 		// 119
-	/*	 float varl = (12 345.01 >= 123 45.00) ? 12.456 : 124 56.02f;
+		 float varl = (12_345.01 >= 123_45.00) ? 12_456 : 124_56.02f;
 		 float var2 = varl + 1024;
-		 System.out.print (var2) ;
-	*/	 
-		 //120
+		 System.out.println ("var2 "+ var2) ;
 		 
+		 //120
+		 System.out.println ("QN: 120 ") ;
 		 String[] arr = {"A", "B", "C", "D"};
 		 for (int i = 0; i < arr.length; i++) {
 		 System.out.print(arr[i] + " ");
