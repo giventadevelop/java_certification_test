@@ -27,7 +27,7 @@ int wd = 0;
 		switch (s) {
 		case "sat":
 		case "sun":
-		wd--;
+		wd-=1;
 		break;
 		case "mon":
 		wd++;
@@ -36,9 +36,9 @@ int wd = 0;
 		}
 		}
 		System .out.println (wd) ;
-		BiFunction<Integer, Double, Integer> val = (t1, t2) -> t1 + t2;//line n1
-		System.out.println(val.apply(10, 10.5));
-		
+//		BiFunction<Integer, Double, Integer> val = (t1, t2) -> t1 + t2;//line n1
+//		System.out.println(val.apply(10, 10.5));
+//		
 		
 }
 	

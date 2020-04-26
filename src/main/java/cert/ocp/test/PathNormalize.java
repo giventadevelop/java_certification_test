@@ -4,6 +4,7 @@
 package cert.ocp.test;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -74,6 +75,28 @@ System.out.println(" absolute Path without normalize "+ path6.toAbsolutePath());
 									// TODO Auto-generated catch block
 									e.printStackTrace();
 								}
+								
+								
+								final Path p1 = Paths.get("/usr/src");
+								final Path p2 = Paths.get("/usr/../usr/src");
+								// Since the above two won't be normailised they aren't equal and path considers the 
+								  //String...  soprints false below
+								System.out.println(" p1.equals(p2) "+ p1.equals(p2)) ; //
+
+								System.out.println(" Paths.get(\"/usr/../usr/src\").normalize() "+ Paths.get("/usr/../usr/src").normalize()) ; // 
+								 
+								try {
+									Files.isSameFile(p1, p2);
+								} catch (IOException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								} // true
+
+								final Path p3 = Paths.get("/usr/src");
+								final Path p4 = Paths.get("/usr/src");
+
+								System.out.println(" p3.equals(p4) "+ p3.equals(p4)) ; p3.equals(p4); // 
+
 	}
 
 }

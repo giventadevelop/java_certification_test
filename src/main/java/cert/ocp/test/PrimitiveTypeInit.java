@@ -30,6 +30,10 @@ public class PrimitiveTypeInit {
 	
 	public static void main(String[] args) {
 		
+        /* the below will not compile  and should be declared 
+		as instead float fltVar=2.1f;*/
+		//float fltVar=2.1; 
+		
 		System.out.println("longVar "+ longVar );
 		
 		System.out.println("_intVar "+ _intVar );

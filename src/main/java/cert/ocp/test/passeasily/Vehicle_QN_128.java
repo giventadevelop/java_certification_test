@@ -22,8 +22,8 @@ class Car_QN_128 extends Vehicle_QN_128 {
 
 	Car_QN_128() {
 		super();
-		//Constructor call must be the first statement in a constructor
-		this(20); // line n2
+		//Constructor call must be the first statement in a constructor either super / this you cannot have both 
+		//this(20); // line n2
 	}
 
 	Car_QN_128(int y) {
