@@ -67,7 +67,7 @@ public class ArrayIndexCheck_QN_39 {
 	System.out.print ("   ");
 	System.out.print ("  QN 137 ");
 	LocalDate date = LocalDate.of(2012, 1, 32);
-	date .plusDays (10);
+	date.plusDays (10);
 	System. out.println (date) ;
 	
 	

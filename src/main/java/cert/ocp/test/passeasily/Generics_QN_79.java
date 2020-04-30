@@ -95,12 +95,23 @@ public class Generics_QN_79<T> {
 		 }
 
 	 class A2 {
-		 private static int i;
-		 private A2(){}
-
+		 private static int A2;
+		 
+		 private A2(){
+			 
+			 A2=10;
+		 }
+		 
+		 {
+			 A2=10; 
+		 }
+		 
+		 static{
+			 A2=10;
 		 }
 
 		class a4 {
+			
 		 protected static final int i;
 		 private void doStuff () {}
 
@@ -112,3 +123,54 @@ public class Generics_QN_79<T> {
 		 abstract void doIt();
 
 		 }
+		
+		
+		class A6 {
+			 protected  final int staticfinalVar;
+			 
+			 protected  final int instancefinalVar;
+			 
+			 public A6() {
+				 staticfinalVar=0;
+				// TODO Auto-generated constructor stub
+			}
+			 
+			 public A6(int k) {
+				 staticfinalVar=0;
+				 
+				 // static is class so can be referenced here
+				int localVar= methodFinalVar;
+					// TODO Auto-generated constructor stub
+				}
+			 
+			 public A6(int k,  String str) {
+					// TODO Auto-generated constructor stub
+				}
+			 
+			 
+			 private void doStuff () {
+				 
+				 static final int methodFinalVar=12;
+				 
+				 instancefinalVar=14;
+				 
+			 }
+			 
+
+			 }
+		
+	 }
+		
+		 class A7 {
+			 protected final int A7;
+			// initialize blank final variable  in the instance initialiser 
+			 {
+				 A7=0; 
+			 }
+			 
+			 void doStuff() {}
+			 public A7() {
+				// TODO Auto-generated constructor stub
+			}
+
+			 }

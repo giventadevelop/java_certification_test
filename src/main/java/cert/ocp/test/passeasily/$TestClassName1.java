@@ -38,7 +38,10 @@ public class $TestClassName1 {
 	}
 
 
-
+	static final public  String _testMethodName1() {
+		return null;
+		
+	}
 
 	/**
 	 * @param args
